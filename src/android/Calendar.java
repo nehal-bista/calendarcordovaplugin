@@ -16,7 +16,7 @@ public class Calendar extends CordovaPlugin {
 		@Override
 		public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 			try {
-				if (ACTION_ADD_CALENDAR_ENTRY.equals(action)) { 
+				//if (ACTION_ADD_CALENDAR_ENTRY.equals(action)) { 
 						 //JSONObject arg_object = args.getJSONObject(0);
 						 //Intent calIntent = new Intent(Intent.ACTION_EDIT)
 					//.setType("vnd.android.cursor.item/event")
@@ -32,11 +32,13 @@ public class Calendar extends CordovaPlugin {
 					//.putExtra(Events.EVENT_LOCATION, "My Guest House")
 					//.putExtra(Events.RRULE, "FREQ=YEARLY");
 				   //this.cordova.getActivity().startActivity(calIntent);
-				   callbackContext.success("Event created.");
-				   return true;
-				}
-				callbackContext.error("Invalid action");
-				return false;
+				   //callbackContext.success("Event created.");
+				   //return true;
+				//}
+				//callbackContext.error("Invalid action");
+				//return false;
+				callbackContext.success("Success");
+				return true;
 			} catch(Exception e) {
 				System.err.println("Exception: " + e.getMessage());
 				callbackContext.error(e.getMessage());
