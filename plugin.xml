@@ -20,7 +20,9 @@
                 <param name="android-package" value="org.devgirl.calendar.Calendar"/>
             </feature>
         </config-file>
- 
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+        </config-file>
         <source-file src="src/android/Calendar.java" target-dir="src/org/devgirl/calendar" />      
      </platform>          
 </plugin>
