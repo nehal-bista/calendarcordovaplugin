@@ -25,7 +25,7 @@ public class Calendar extends CordovaPlugin {
 					.putExtra("eventLocation", arg_object.getString("eventLocation"));
 			 
 				   this.cordova.getActivity().startActivity(calIntent);
-				   callbackContext.success();
+				   callbackContext.success("Event created.");
 				   return true;
 				}
 				callbackContext.error("Invalid action");
