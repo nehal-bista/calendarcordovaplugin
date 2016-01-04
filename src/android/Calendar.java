@@ -31,11 +31,11 @@ public class Calendar extends CordovaPlugin {
 					//.putExtra(Events.DESCRIPTION, "This is a sample description")
 					//.putExtra(Events.EVENT_LOCATION, "My Guest House")
 					//.putExtra(Events.RRULE, "FREQ=YEARLY");
-				   //this.cordova.getActivity().startActivity(calIntent);
-				   //callbackContext.success("Event created.");
-				   //return true;
-				   callbackContext.success("Success");
-				   return true;
+				   	//this.cordova.getActivity().startActivity(calIntent);
+				   	//callbackContext.success("Event created.");
+				   	//return true;
+				   	callbackContext.success("Success");
+				   	return true;
 				}
 				callbackContext.error("Invalid action");
 				return false;
